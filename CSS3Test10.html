@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSS3Test</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s, height 2s, transform 2s;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+        transition-duration: 1s;
+      }
+      div:hover {
+        width: 300px;
+        height: 200px;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      鼠标移动到 div 元素上，查看过渡效果。
+    </div>
+  </body>
+</html>
