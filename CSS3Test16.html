@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>CSS3Test</title>
+    <style>
+      /* body {
+        direction: rtl;
+      } */
+      .flex-container {
+        display: flex;
+        width: 400px;
+        height:  250px;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        /* align-items: center;  */
+        /* justify-content: space-around; */
+        background-color: lightgray;
+        /* align-content: center; */
+      }
+    .flex-item {
+      background-color: cornflowerblue;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+    .first {
+      order: -1;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item first">flex item 2</div>
+      <div class="flex-item">flex item 3</div>
+    </div>
+  </body>
+</html>
